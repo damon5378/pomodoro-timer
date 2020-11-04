@@ -9,7 +9,7 @@ function App() {
 
   const [title, setTitle] = useState('Let the countdown begin')
 
-  const [timeLeft, setTimeLeft] = useState(10)
+  const [timeLeft, setTimeLeft] = useState(25 * 60)
 
   const [isRunning, setIsRunning] = useState(false)
 
@@ -42,7 +42,7 @@ function App() {
     clearInterval(intervalRef.current)
     intervalRef.current = null
     setTitle('Ready to go another round?')
-    setTimeLeft(10)
+    setTimeLeft(25 * 60)
     setIsRunning(!isRunning)
   }
 
